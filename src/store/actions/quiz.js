@@ -182,7 +182,6 @@ export function quizAnswerClick(answerId) {
                   .length
               ),
             });
-          console.log(results);
         } else {
           dispatch(quizNextQuestion(state.activeQuestion + 1));
         }

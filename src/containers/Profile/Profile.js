@@ -16,8 +16,6 @@ function useUsers() {
       if (documentSnapshot.exists) {
         const data = documentSnapshot.data();
         setUsers(data);
-      } else {
-        console.log("document not found");
       }
     });
   }, []);

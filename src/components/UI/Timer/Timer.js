@@ -13,7 +13,6 @@ class Timer extends Component {
     this.props.resetTimerToStart();
     this.myInterval = setInterval(() => {
       const { seconds, decSeconds, nextQuestion } = this.props;
-      console.log(seconds);
       if (seconds > 0) {
         decSeconds();
       } else if (seconds === 0) {
