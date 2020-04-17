@@ -13,14 +13,12 @@
   font-weight: 500;
 }
 
-
-
 .Button:focus {
-    outline: none;
+  outline: none;
 }
 
 .Button:active {
-  box-shadow: inset 1px 1px 0px rgba(0, 0, 0, .3);
+  box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
 .Button:disabled {
@@ -34,21 +32,11 @@
 }
 
 .success {
-    background: #fff;
-    color: rgb(45, 115, 133);
+  background: #fff;
+  color: rgb(45, 115, 133);
 }
 
 .primary {
   background: rgba(176, 193, 71, 1);
   color: #fff;
-  /* background: rgb(36, 202, 92);
-
-  color: #fff;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.5); */
 }
-/* 
-.primary {
-  background: rgb(255, 92, 124);
-  color: #fff;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.5);
-} */

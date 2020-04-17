@@ -3,27 +3,32 @@ import classes from "./Drawer.module.css";
 import { NavLink } from "react-router-dom";
 import Backdrop from "../../UI/Backdrop/Backdrop";
 import firebase from "../../../firebase";
-const links = [{
-  to: "/",
-  label: " ВЫБРАТЬ ТЕМУ",
-  exact: true,
-  icon: "literature",
-}, {
-  to: "/rating",
-  label: "РЕЙТИНГ",
-  exact: false,
-  icon: "rating",
-}, {
-  to: `/user/${localStorage.userId}`,
-  label: "ЛИЧНЫЙ КАБИНЕТ",
-  exact: false,
-  icon: "user",
-}, {
-  to: "/logout",
-  label: "ВЫЙТИ",
-  exact: false,
-  icon: "logout",
-}];
+const links = [
+  {
+    to: "/",
+    label: " ВЫБРАТЬ ТЕМУ",
+    exact: true,
+    icon: "literature",
+  },
+  {
+    to: "/rating",
+    label: "РЕЙТИНГ",
+    exact: false,
+    icon: "rating",
+  },
+  {
+    to: `/user/${localStorage.userId}`,
+    label: "ЛИЧНЫЙ КАБИНЕТ",
+    exact: false,
+    icon: "user",
+  },
+  {
+    to: "/logout",
+    label: "ВЫЙТИ",
+    exact: false,
+    icon: "logout",
+  },
+];
 function useUsers() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
@@ -40,19 +45,17 @@ function useUsers() {
   }, []);
   return users;
 }
-function Drawer (props) {
+function Drawer(props) {
   const user = useUsers();
   const clickHandler = () => {
     props.onClose();
   };
- const renderLinks = (links) => {
-    return links.map((link, index) => {      
+  const renderLinks = (links) => {
+    return links.map((link, index) => {
       return (
-        <li 
-        className={classes.itemListing} 
-        key={index}>
+        <li className={classes.itemListing} key={index}>
           <NavLink
-          className={classes.linkListing}
+            className={classes.linkListing}
             to={link.to}
             exact={link.exact}
             activeClassName={classes.active}
@@ -70,36 +73,30 @@ function Drawer (props) {
         </li>
       );
     });
+  };
+  const cls = [classes.Drawer];
+  if (!props.isOpen) {
+    cls.push(classes.close);
   }
-    const cls = [classes.Drawer];
-    if (!props.isOpen) {
-      cls.push(classes.close);
-    }
-    return (
-      <>
-        <nav className={cls.join(" ")}>
-          {props.isAuthenticated ? (
-            <ul className={classes.listing}>
-              <div className={classes.boxLogo}>
-                <img src={"/img/logo.png"} alt="" className={classes.Ava} />
-              </div>
-          <div className={classes.userName}>{user.userName}</div>
-            </ul>
-          ) : null}
-          <ul className={classes.listing} >
-            {renderLinks(links)}
+  return (
+    <>
+      <nav className={cls.join(" ")}>
+        {props.isAuthenticated ? (
+          <ul className={classes.listing}>
+            <div className={classes.boxLogo}>
+              <img src={"/img/logo.png"} alt="" className={classes.Ava} />
+            </div>
+            <div className={classes.userName}>{user.userName}</div>
           </ul>
-          <a href="https://youtu.be/qks8SgT1B4M" className={classes.mail}>
-            <img
-              className={classes.iconMail}
-              src="./img/Menu/mail.png"
-              alt=""
-            />
-            Связаться с нами
-          </a>
-        </nav>
-        {props.isOpen ? <Backdrop onClick={props.onClose} /> : null}
-      </>
-    );
+        ) : null}
+        <ul className={classes.listing}>{renderLinks(links)}</ul>
+        <a href="https://youtu.be/qks8SgT1B4M" className={classes.mail}>
+          <img className={classes.iconMail} src="./img/Menu/mail.png" alt="" />
+          Связаться с нами
+        </a>
+      </nav>
+      {props.isOpen ? <Backdrop onClick={props.onClose} /> : null}
+    </>
+  );
 }
 export default Drawer;

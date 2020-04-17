@@ -12,7 +12,7 @@ import {
   QUIZ_DECR_TIMER,
   QUIZ_SHOW_LOADER,
   QUIZ_HIDE_LOADER,
-  QUIZ_RESET_TIMER
+  QUIZ_RESET_TIMER,
 } from "./actionTypes";
 
 export function fetchQuizes() {
@@ -164,7 +164,7 @@ export function quizAnswerClick(answerId) {
       dispatch(quizSetState({ [answerId]: "error" }, results));
     }
 
-    dispatch(decSecondsAC())
+    dispatch(decSecondsAC());
 
     setTimeout(() => {
       dispatch(showLoader());

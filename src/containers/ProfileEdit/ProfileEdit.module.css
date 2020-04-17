@@ -1,8 +1,4 @@
 .wrapper {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column; */
   padding: 30px;
   flex-grow: 1;
   width: 100%;
@@ -38,8 +34,8 @@
   border-radius: 50%;
   margin-top: 10px;
 }
-.userInfo{
-  font-family: 'Muller Narrow Extra Light';
+.userInfo {
+  font-family: "Muller Narrow Extra Light";
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -54,14 +50,12 @@
 }
 
 .editForm {
-  /* flex-basis: 40%; */
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: space-between;
   align-items: center;
-  /* background-color: rgba(11, 14, 15, 0.7); */
 }
 .label {
   color: red;
@@ -69,10 +63,9 @@
   padding: auto;
 }
 
-.inputChange{
+.inputChange {
   font-size: 30px;
   color: white;
-  /* background: none; */
   outline: none;
   border: none;
   padding: 5px;
@@ -85,16 +78,15 @@
 .inputChange::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
-} 
+}
 .inputChange:hover {
-  /* color: rgba(255, 255, 255, 0.5); */
-  cursor: text
+  cursor: text;
 }
 
 .mainBlock {
-  background:rgba(255, 255, 255, .3);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
-  max-width:600px;
+  max-width: 600px;
   margin: 60px auto;
   padding: 20px;
   display: flex;
@@ -106,23 +98,18 @@
   padding: 6px 15px;
   border-radius: 35px;
   border: 1px solid #ccc;
-  /* color: rgba(255, 255, 255); */
   text-transform: uppercase;
   font-size: 11px;
-  /* margin-bottom: 6px; */
   border: none;
   outline: none;
-  /* font-weight: 800; */
   cursor: pointer;
-  /* font-family: "Mulle"; */
   transition: all 0.4s;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   float: right;
 }
 
-.btn:hover{
+.btn:hover {
   transform: scale(1.03);
-  
 }
 
 .btnBlock {

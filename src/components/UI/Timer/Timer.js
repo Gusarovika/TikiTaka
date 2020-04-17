@@ -8,7 +8,6 @@ import {
 import classes from "./Timer.module.css";
 
 class Timer extends Component {
-
   componentDidMount() {
     this.props.resetTimerToStart();
     this.myInterval = setInterval(() => {
@@ -30,12 +29,9 @@ class Timer extends Component {
     return seconds >= 0 ? (
       <div className={classes.Timer}>
         {seconds}
-        {/* { seconds < 10 ? `0${seconds}` : seconds } */}
       </div>
     ) : (
-      <div className={classes.timeOut}>
-        Сорян, время вышло
-      </div>
+      <div className={classes.timeOut}>Сорян, время вышло</div>
     );
   }
 }

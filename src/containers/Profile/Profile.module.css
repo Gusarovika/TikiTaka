@@ -41,7 +41,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 55px;
-  /* justify-content: space-between; */
 }
 
 .profilePic {
@@ -82,7 +81,6 @@
 .results {
   flex-basis: 40%;
   width: 100%;
-  /* min-height: auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,7 +89,6 @@
   border-radius: 5px;
 }
 .resultNumbers {
-  /* display: flex; */
   width: 80%;
 }
 .win {
@@ -143,7 +140,6 @@
 @media (max-width: 576px) {
   .profile {
     width: 420px;
-    /* padding: 0; */
   }
   .userInfo {
     min-width: 100%;
@@ -154,8 +150,5 @@
   .profile {
     width: 300px;
     padding: 10px;
-  }
-  .userInfo {
-    /* width: 300px; */
   }
 }

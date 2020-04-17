@@ -94,9 +94,8 @@
   transition: all 0.4s;
   box-shadow: 0 0 20px black;
 }
-.Button:hover{
+.Button:hover {
   transform: scale(1.03);
-  
 }
 
 .Button:focus {
@@ -112,7 +111,6 @@
   max-width: 300px;
   font-size: 13px;
   font-weight: bold;
-
 }
 
 .tableWrap {
@@ -130,7 +128,6 @@
     width: 250px;
   }
 }
-
 
 @media (max-width: 400px) {
   .Button {

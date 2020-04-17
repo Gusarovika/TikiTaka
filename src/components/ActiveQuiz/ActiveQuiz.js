@@ -4,7 +4,6 @@ import AnswersList from "./AnswersList/AnswersList";
 import Timer from "../UI/Timer/Timer";
 
 const ActiveQuiz = (props) => {
-
   return (
     <div className={classes.ActiveQuiz}>
       <div

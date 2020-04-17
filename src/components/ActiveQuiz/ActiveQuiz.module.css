@@ -1,13 +1,12 @@
 .ActiveQuiz {
   padding: 20px;
-  color: #2D2D2D;
+  color: #2d2d2d;
 
   position: relative;
   margin: 0 10px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-
 }
 
 .Question {
@@ -20,24 +19,23 @@
   padding: 15px;
   height: 100px;
   text-align: center;
-  font-family: 'Muller Narrow Extra Light';
+  font-family: "Muller Narrow Extra Light";
   font-size: 16pt;
   font-weight: 800;
-  letter-spacing:0.5pt
-  
+  letter-spacing: 0.5pt;
 }
 .questText {
   max-width: 400px;
 }
 
-.Title{
-  font-family: 'Muller Narrow Extra Bold';
+.Title {
+  font-family: "Muller Narrow Extra Bold";
   font-size: 30pt;
   margin: 0;
   align-self: flex-end;
 }
 
-.Progress{
+.Progress {
   text-align: right;
   color: white;
   z-index: 100;
@@ -52,30 +50,30 @@
   position: absolute;
   right: 5px;
   text-align: center;
-  color: #2D2D2D;
+  color: #2d2d2d;
   border-radius: 2px;
-  bottom: 10px; 
+  bottom: 10px;
   width: 50px;
   line-height: 2em;
   background-color: rgb(255, 255, 255, 0.7);
 }
-.Image{
+.Image {
   border-radius: 5px;
-  width:100%;
+  width: 100%;
 }
 
-@media (min-width:890px) {
+@media (min-width: 890px) {
   .imgWrap {
     height: 472px;
   }
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .imgWrap {
     height: 248px;
   }
 }
-@media (max-width:400px) {
+@media (max-width: 400px) {
   .imgWrap {
     height: 178px;
   }

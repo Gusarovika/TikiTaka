@@ -1,11 +1,11 @@
-.meter { 
-    height: 8%;
-    width: 80%;
-    position: relative;
-    background: red;
-    overflow: hidden;
-    border-radius:  15px;
-    margin: 25px 0;
+.meter {
+  height: 8%;
+  width: 80%;
+  position: relative;
+  background: red;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 25px 0;
 }
 
 .metrSpan {
@@ -14,14 +14,18 @@
 }
 
 .progress {
-    background-color: mediumspringgreen;
-    animation: progressBar 3s ease-in-out;
-    animation-fill-mode:both;
-    display: block;
-    height: 100%;
+  background-color: mediumspringgreen;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode: both;
+  display: block;
+  height: 100%;
 }
 
 @keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }

@@ -2,7 +2,6 @@ import firebase from "../../firebase";
 import {
   FETCH_RATING_START,
   FETCH_RATING_SUCCESS,
-  // FETCH_RATING_ERROR,
 } from "./actionTypes";
 
 export function fetchRating() {

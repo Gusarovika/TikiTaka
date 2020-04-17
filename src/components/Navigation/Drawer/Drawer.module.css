@@ -86,8 +86,7 @@
   margin-right: 15px;
 }
 
-
-@media (max-width:400px) {
+@media (max-width: 400px) {
   .Drawer {
     width: 60%;
     padding: 0 30px;
