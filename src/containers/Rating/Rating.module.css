@@ -112,11 +112,34 @@
   }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 400px) {
   .tableRating {
     min-width: 300px;
+    margin: 70px auto;
+    font-size: 15px;
   }
   .title {
     font-size: 32px;
+  }
+  .tdBody {
+    padding: 5px;
+    text-align: center;
+    font-size: medium;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .tableRating {
+    max-width: 250px;
+    margin: 100px auto;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .tdBody {
+    padding: 2px;
+    text-align: center;
+    font-size: medium;
   }
 }

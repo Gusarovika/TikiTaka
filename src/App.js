@@ -13,16 +13,17 @@ import Profile from "./containers/Profile/Profile";
 import Rating from "./containers/Rating/Rating";
 
 class App extends Component {
+
   componentDidMount() {
     this.props.autoLogin();
   }
 
   render() {
+    
     let routes = (
       <Switch>
         <Route path="/auth" component={Auth} />
         <Route path="/loading" exact component={LoadingPage} />
-
         <Redirect to="/loading" />
       </Switch>
     );

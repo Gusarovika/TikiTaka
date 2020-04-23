@@ -86,7 +86,7 @@
   margin-right: 15px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .Drawer {
     width: 60%;
     padding: 0 30px;
@@ -107,5 +107,11 @@
   .iconMail {
     width: 20px;
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .Drawer {
+    width: 70%;
   }
 }

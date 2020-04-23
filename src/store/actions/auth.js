@@ -27,6 +27,7 @@ export function auth(email, password, isLogin) {
     localStorage.setItem("token", data.idToken);
     localStorage.setItem("userId", data.localId);
     localStorage.setItem("expirationDate", expirationDate);
+    
     const userRef = firebase.firestore().collection("users").doc(data.localId);
     userRef.get().then((doc) => {
       if (!doc.exists) {
